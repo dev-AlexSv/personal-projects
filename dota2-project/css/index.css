@@ -1,0 +1,19 @@
+/* CSS FOR INDEX.HTML */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#steam-logo {
+    width: 30%  ;
+    height: auto;
+    align-self: center;
+}
+
+#main-description {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "DescriptionFont", 'Courier New', Courier, monospace;
+    padding: 4rem;
+}
