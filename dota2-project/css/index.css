@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* CSS FOR INDEX.HTML */
 
 main {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 #steam-logo {
@@ -13,7 +16,63 @@ main {
 
 #main-description {
     text-align: center;
+    font-size: 2rem;
+    font-family: "DescriptionFont", 'Courier New', Courier, monospace;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    color: black;
+}
+
+#md {
+    text-align: center;
     font-size: 4rem;
     font-family: "DescriptionFont", 'Courier New', Courier, monospace;
-    padding: 4rem;
+    padding: 0rem;
+}
+
+#md-3 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "DescriptionFont", 'Courier New', Courier, monospace;
+    padding: 0rem;
+}
+
+
+#md-2 {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "DotaCustoFont", 'Courier New', Courier, monospace;
+    padding: 0rem;
+    width: 60ch;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 30px;
+}
+
+#md-4 {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "DescriptionFont", 'Courier New', Courier, monospace;
+    margin: 0;
+    margin-left: 5%;
+    align-self: center;
+}
+
+#steam-logo {
+    padding: 0;
+    margin: 0;
+
+}
+
+.logo-des {
+    width: 30%;
+    height: 10%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 20px;
+    flex: 0 0 auto;
+    align-self: center;
 }
