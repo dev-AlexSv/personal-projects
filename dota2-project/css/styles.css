@@ -77,17 +77,6 @@ ul li.active a {
 
 /* CSS body code */
 
-main {
-    background-image: url(../resources/images/phantomassassin.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    height: 80%;
-    margin: 0;
-    padding: 0;
-}
-
 .site-footer {
     background-color: rgb(88, 15, 15);
     height: 5%;

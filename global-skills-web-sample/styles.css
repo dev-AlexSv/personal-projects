@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+}
+
+/* Ensure html and body take up full viewport height */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+    font-family: "OpenSans", 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    display: inline-block;
+    padding: 30px;
+}
+
+.divider {
+    height: 2vw;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    margin-left: 150px;
+    gap: 150px
+}
+
+#main-logo {
+    max-width: 15%;
+}
+
+/* Main Styles */
+
+main {
+    min-height: 100%;
+    color: white;
+    font-family: "OpenSansLight", 'Courier New', Courier, monospace;
+    overflow: visible;
+}
+
+#about-us {
+    background-image: url(images/bg1aboutus.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+
+#main-description {
+    padding-top: 180px;
+}
+
+#mission-vis {
+    height: 100%;
+    background-image: url(images/missionbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+
+#mis-des1, #courses-des1 {
+    padding: 80px;
+}
+
+#mis-subdes1 {
+    padding: 20px;
+}
+
+#courses {
+    height: 100%;
+    background-color: rgb(15, 32, 56);
+}
+
+.layout-card {
+    display: flex;
+    height: 50%;
+    gap: 20px;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.container-card > img {
+    max-width: 50%;
+    align-self: center;      /* scale down if too wide */
+    height: auto;  
+}
+
+#about-us, #mission-vis, #courses {
+  min-height: 100vh; /* each section fills at least one viewport height */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    position: relative;
+}
+
+#copyright {
+    font-family: "OpenSansItalic", 'Courier New', Courier, monospace;
+    color: black;
+}
+

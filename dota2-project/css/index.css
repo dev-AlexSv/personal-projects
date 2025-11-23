@@ -76,3 +76,14 @@ main {
     flex: 0 0 auto;
     align-self: center;
 }
+
+main {
+    background-image: url(../resources/images/phantomassassin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}

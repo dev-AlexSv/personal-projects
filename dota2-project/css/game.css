@@ -1,0 +1,64 @@
+#heroes-d {
+    background-image: url(../resources/images/HeroesDota2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+}
+
+#items-d {
+
+}
+
+.dark-bg {
+    background: linear-gradient(90deg,rgba(48, 24, 24, 1) 0%, rgba(25, 56, 41, 1) 100%, rgba(237, 221, 83, 1) 100%);
+    filter: blur(7px);
+
+    height: 100px;
+}
+
+#last-description {
+    background-image: url(../resources/images/MapDota2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main {
+    overflow: auto;
+}
+
+h2 {
+    font-family: "DescriptionFont", 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.mini-d {
+    font-family: "DotaCustomFont", 'Courier New', Courier, monospace;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.game-d {
+    margin-left: 15%;
+}
+
+.marker-bar {
+    width: 15%;
+    height: 2%;
+    background-color: orange;
+    border-radius: 6px;
+    margin-left: 15%;
+}
