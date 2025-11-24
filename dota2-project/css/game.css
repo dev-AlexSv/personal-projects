@@ -62,3 +62,11 @@ h2 {
     border-radius: 6px;
     margin-left: 15%;
 }
+
+#heroes-d h2{
+    padding: 20px;
+}
+
+a {
+    width: 57%;
+}

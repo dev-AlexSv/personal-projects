@@ -138,16 +138,42 @@ main {
 
 /* Footer Styles */
 footer {
-    background-color: #f0f0f0;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
-    height: 10%;
+    height: 40%;
     width: 100%;
     position: relative;
 }
 
 #copyright {
+    position: absolute;
+    bottom: 0;          /* stick to bottom */
+    left: 0;            /* align to left edge */
+    width: 100%;
     font-family: "OpenSansItalic", 'Courier New', Courier, monospace;
     color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f0f0;
 }
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.links img {
+    width: 30%;
+}
+
+.links img {
+  transition: filter 0.3s ease;
+}
+
+.links img:hover {
+    filter: opacity(0.3);
+}
+
 
