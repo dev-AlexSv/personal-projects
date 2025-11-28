@@ -13,7 +13,7 @@ html, body {
 
 li {
     list-style-type: none;
-    font-family: "OpenSans", 'Courier New', Courier, monospace;
+    font-family: "OpenSansLight", 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -23,7 +23,7 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 
 h1 {
@@ -43,20 +43,69 @@ h2 {
 .divider {
     height: 2vw;
 }
+:root {
+    --bt-color: green;
+}
+/* Custom Selectors */
+    /* Dark Mode */
+    :root.dark-mode {
+        --bg-color: rgb(35, 35, 35);
+        --text-color: #ddd;
+        --bg-button: white;
+        --circle-position: 50px;
+
+    }
+
+    :root.light-mode {
+        --bg-color: white;
+        --bg-button: black;
+        --text-color: rgb(35, 35, 35);
+        --circle-position: 8px;
+    }
+
+/* Button Style */
+#mode-change {
+    background-color: var(--bg-button);
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#toggle-circle {
+    background-color: var(--bt-color);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 8px;
+    left: var(--circle-position);
+}
+
+
 
 /* Header Styles */
+
+#header {
+    position: fixed;
+    top: 0;
+    background-color: var(--bg-color);
+}
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 3px;
 }
 
 ul {
     display: flex;
     margin-left: 150px;
-    gap: 150px
+    gap: 100px
 }
 
 #main-logo {
@@ -68,12 +117,13 @@ ul {
 main {
     min-height: 100%;
     color: white;
+    background-color: var(--bg-color);
     font-family: "OpenSansLight", 'Courier New', Courier, monospace;
     overflow: visible;
 }
 
 #about-us {
-    background-image: url(images/bg1aboutus.jpeg);
+    background-image: url(../images/bg1aboutus.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -86,7 +136,7 @@ main {
 
 #mission-vis {
     height: 100%;
-    background-image: url(images/missionbg2.jpg);
+    background-image: url(../images/missionbg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -143,6 +193,8 @@ footer {
     height: 40%;
     width: 100%;
     position: relative;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 #copyright {
@@ -151,10 +203,10 @@ footer {
     left: 0;            /* align to left edge */
     width: 100%;
     font-family: "OpenSansItalic", 'Courier New', Courier, monospace;
-    color: black;
+    color: var(--text-color);
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
 }
 
 .links {
@@ -170,6 +222,8 @@ footer {
 
 .links img {
   transition: filter 0.3s ease;
+  color: var(--text-color);
+  background-color: white   ;
 }
 
 .links img:hover {
