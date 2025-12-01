@@ -1,85 +1,118 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+/* CSS CUSTOMS */
+:root {
+    --input-border-color: green;
+    --password-border-color: red;
+    --form-bg-color: #eee;
 }
 
-/* Ensure html and body take up full viewport height */
+
+/* MAIN CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
-  font-family: "OpenSans", 'Courier New', Courier, monospace;
-  color: white;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "OpenSansLight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-family: "OpenSans", 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 body {
-    text-align: center;
-    background-image: url(../images/bgform1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    
 }
 
-form {
-  display: inline-block;
-  margin-top: 1rem;
-  /* Form outline */
-  padding: 2rem;
-  width: 65%;
-  height: 80%;
+button {
+    font-family: "OpenSans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--password-border-color);
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.container-bg {
+    width: calc(100% - 45%);
+    height: 100%;
+    background-image: url(../images/bg-register.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container-form {
+    width: 45%;
+    height: auto;
+}
+
+form, fieldset, .inputs-container {
+    max-height: 80%;
 }
 
 fieldset {
-    width: auto;
-    height: 90%;
-    padding: 20px;
-    border: none;
+    border: 0px;
+
 }
 
-.input-container {
-    height: 15%;
-}
-
-label {
-  /* Uniform size & alignment */
-  display: inline-block;
-  min-width: 90px;
-  text-align: right;
-}
-
-input:focus,
-textarea:focus {
-  /* Set the outline width and style */
-  outline-style: solid;
-  /* To give a little highlight on active elements */
-  outline-color: white;
-}
-
-.input-container + .input-container {
-    margin-top: 1rem;
-}
-
-input, select{
-    font: 1em sans-serif;
-  /* Uniform text field size */
-    width: 50%;
-    height: 50%;
-    box-sizing: border-box;
-  /* Match form field borders */
-    color: white;
-    background-color: black;
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 input {
-    margin-left: 2rem;
-     appearance: none;
+    padding: 10px;
+    border: 2px solid var(--input-border-color);
+    border-radius: 6px;
+    font-size: 1.2rem;
 }
 
-
-p {
-    font-family: "OpenSansLight", 'Courier New', Courier, monospace;
+input:focus, select:focus {
+    outline: 1px solid blue;
 }
 
-.description-container {
-    padding-bottom: 2rem;
+.label-input {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: 80%;
 }
+
+select {
+    border: 2px solid var(--input-border-color);
+    width: 170px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-family: "OpenSansLight", sans-serif;
+    color: #333;
+    background-color: #f9f9f9;  
+    border-radius: 6px;
+    appearance: none; /* removes default arrow in most browsers */
+    -webkit-appearance: none; /* Safari/Chrome */
+    -moz-appearance: none; /* Firefox */
+}
+
+.select-container {
+    display: flex;
+    gap: 215px;
+}
+

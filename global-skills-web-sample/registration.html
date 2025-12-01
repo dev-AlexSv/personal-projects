@@ -18,43 +18,59 @@
     </style>
 </head>
 <body>
-    <form action="https://httpbin.org/post" method="post">
-        <div class="description-container">
-            <h2>Enrollment Form</h2>
-            <p>Please proceed to input on the following fields</p>
-        </div>
-       <fieldset>
-             <div class="input-container">
-                <label for="first-name">First Name: </label>
-                <input id="first-name" name="first-name" type="text" placeholder="First Name..." required>
-            </div>
-            <div class="input-container">
-                <label for="last-name">Last Name: </label>
-                <input id="last-name" name="last-name" type="text" placeholder="Last Name..." required>
-            </div>
-            <div class="input-container">
-                <label for="age">Age: </label>
-                <input id="age" name="age" type="number" required>
-            </div>
-            <div class="input-container">
-                <label for="user-email">Email: </label>
-                <input type="email" id="user-email" name="user-email" placeholder="youremail@gmail.com" required>
-            </div>
-            <div class="input-container">
-                <label for="dob">Date of Birth: </label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
+    <div class="container-bg">
 
-            <div class="input-container"    >
-                <label for="choice-course">Choose your Course: </label>
-                <select value="" name="course" id="choice-course" required>
-                    <option value="Java">Java Programming NCIII</option>
-                    <option value="Css">CSS NCII</option>
-                </select>
-            </div>
-       </fieldset>
-        <button id="bt-submit" type="submit">Submit</button>
+    </div>
+    <div class="container-form">
+        <form id="register-form" action="#" method="post">
+            <h1>Become an Expert with Global Skills</h1>
 
-    </form>
+            <fieldset>
+                <div class="inputs-container">
+                    <div class="label-input">
+                        <label for="fname">Firstname</label>
+                        <input id="fname" name="fname" type="text" placeholder="Firstname" required>
+                    </div>
+
+                    <div class="label-input">
+                        <label for="lname">Lastname</label>
+                        <input id="lname" name="lname" type="text" placeholder="Lastname" required>
+                    </div>
+
+                    <div class="label-input">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="label-input">
+                        <label for="contact-number">Contact Number</label>
+                        <input id="contact-number" name="contact-number" type="number" placeholder="+63" required>
+                    </div>
+
+                    <div class="select-container">
+                        <div class="label-input">
+                            <label for="sex">Sex</label>
+                            <select id="sex" name="sex">
+                                <option value="" selected disabled>Courses</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="label-input">
+                            <label for="course-choice">Course</label>
+                            <select id="course-choice" name="course-choice" required>
+                                <option value="" selected disabled>Sex</option>
+                                <option value="java">Java Programming</option>
+                                <option value="css">Computer Systems Servicing</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit">Enroll</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>

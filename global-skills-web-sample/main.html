@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <title>Global Skills</title>
     <script src="code.js" defer></script>
     <style>
@@ -26,27 +27,39 @@
 </head>
 
 <body>
-    <header id="header">
-        <img id="main-logo" src="images/globalLogo.jpg" alt="Global Skills Logo">
-        <ul>
-            <a href="#about-us">
-                <li>About Us</li>
-            </a>
-            <a href="#courses">
-                <li>Courses</li>
-            </a>
-            <a href="#footer">
-                <li>Contact Us</li>
-            </a>
-            <a href="registration.html">
-                <li>Enroll</li>
-            </a>
-        </ul>
-        <button id="mode-change" type="button">
-            <div id="toggle-circle"></div>
-        </button>
-    </header>
+        <header id="header">
+            <img id="main-logo" src="images/globalLogoNew.png" alt="Global Skills Logo">
+            <ul>
+                <a href="#">
+                    <li class="dropdown">
+                        About Us
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Programs</li>
+                </a>
+                <a href="#" >
+                    <li>Events</li>
+                </a>
+                <a href="#">
+                    <li>Community</li>
+                </a>
+                <a href="registration.html" target="_blank">
+                    <li>Enroll</li>
+                </a>
+            </ul>
+            <button id="mode-change" type="button">
+                <div id="toggle-circle"></div>
+            </button>
+        </header>
     <main id="main-1">
+        <div class="banner-intro">
+            <h1>"Empowering People with Global Skills for the Future”</h1>
+            <h2>We provide world-class programs to help learners thrive in a changing world.</h2>
+        </div>
+
+        <div class="divider"></div>
+
         <div id="about-us">
             <h1 id="main-description">We Are People Of Action</h1>
             <h2 id="sub-description">We are a learning-focused organization dedicated to empowering individuals with
@@ -79,12 +92,71 @@
         </div>
 
         <div class="divider"></div>
+
+        <h1 id="des-testi">Successful Experiences</h1>
+
+        <div id="testimonials">
+            <div class="profile-card">
+                <img src="images/profiles/johnson.jpg" alt="">
+                <div class="details">
+                    <h3 class="name">Johnson Calicdan</h3>
+                    <h5 class="profile-description">Java Enrollee</h5>
+                </div>
+                <p class="testimonies">"I directly applied the concepts and skills I learned from my courses to an exciting new project at work."</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="images/profiles/sirmike.jpg" alt="">
+                <div class="details">
+                    <h3 class="name">Michael Fabito</h3>
+                    <h5 class="profile-description">Java Enrollee</h5>
+                </div>
+                <p class="testimonies">"I learned a lot about java programming thanks to the professors."</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="images/profiles/johnson.jpg" alt="">
+                <div class="details">
+                    <h3 class="name">Johnson Calicdan</h3>
+                    <h5 class="profile-description">Java Enrollee</h5>
+                </div>
+                <p class="testimonies">"I directly applied the concepts and skills I learned from my courses to an exciting new project at work."</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="images/profiles/johnson.jpg" alt="">
+                <div class="details">
+                    <h3 class="name">Johnson Calicdan</h3>
+                    <h5 class="profile-description">Java Enrollee</h5>
+                </div>
+                <p class="testimonies">"I directly applied the concepts and skills I learned from my courses to an exciting new project at work."</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="images/profiles/johnson.jpg" alt="">
+                <div class="details">
+                    <h3 class="name">Johnson Calicdan</h3>
+                    <h5 class="profile-description">Java Enrollee</h5>
+                </div>
+                <p class="testimonies">"I directly applied the concepts and skills I learned from my courses to an exciting new project at work."</p>
+            </div>
+
+        <div class="divider"></div>
     </main>
     <footer id="footer">
-        <h2 id="ct-us">For more Inquiries, Contact Us</h2>
+        <img src="images/globalLogoNew.png" alt="">
+        <div class="icon-w-description">
+            <img src="images/location.png" alt="location">
+            <a href="https://www.google.com/maps/place/Ancar+Motors/@16.0216998,120.3493576,17z/data=!3m1!4b1!4m6!3m5!1s0x339142b64a510e21:0x89e2837b1d71397b!8m2!3d16.0216947!4d120.3519325!16s%2Fg%2F1tm0qpqr?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank"><p>2nd Flr., Ancar Motors Building, Jose De Venecia, Nalsian, Calasiao, Pangasinan 2418</p></a>
+        </div>
+        <div class="icon-w-description">
+            <img src="images/callsignage.png" alt="contact-number">
+            <p>(075) 202 1821</p>
+        </div>
         <div class="links">
             <a href="https://www.facebook.com/p/Global-Sk1lls-Training-Center-Inc-61567659489872/" target="_blank"><img src="images/fbicon.png" alt=""></a>
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqVwxSmJLkCVNzMrgcnSVfzvpNpkNcPGxShFsqzDmgjxhVVfDHhCdgzRQbtWFFQfctbJxB" target="_blank"><img src="images/gmail.png" alt=""></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqVwxSmJLkCVNzMrgcnSVfzvpNpkNcPGxShFsqzDmgjxhVVfDHhCdgzRQbtWFFQfctbJxB" target="_blank"><img src="images/logo-black.png" alt=""></a>
         </div>
         <div id="copyright">2025 Global Skills Inc. All rights reserved.</div>
     </footer>

@@ -14,7 +14,7 @@ html, body {
 li {
     list-style-type: none;
     font-family: "OpenSansLight", 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding-left: 10px;
@@ -72,7 +72,7 @@ h2 {
     height: 40px;
     position: relative;
     cursor: pointer;
-     transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #toggle-circle {
@@ -85,116 +85,59 @@ h2 {
     left: var(--circle-position);
 }
 
-
-
 /* Header Styles */
 
 #header {
     position: fixed;
     top: 0;
     background-color: var(--bg-color);
-}
-
-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 3px;
+    opacity: 0.9;
 }
 
 ul {
     display: flex;
-    margin-left: 150px;
-    gap: 100px
+    margin-left: 300px;
+    gap: 50px
 }
 
 #main-logo {
     max-width: 15%;
 }
 
-/* Main Styles */
-
-main {
-    min-height: 100%;
-    color: white;
-    background-color: var(--bg-color);
-    font-family: "OpenSansLight", 'Courier New', Courier, monospace;
-    overflow: visible;
-}
-
-#about-us {
-    background-image: url(../images/bg1aboutus.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-}
-
-#main-description {
-    padding-top: 180px;
-}
-
-#mission-vis {
-    height: 100%;
-    background-image: url(../images/missionbg2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-}
-
-#mis-des1, #courses-des1 {
-    padding: 80px;
-}
-
-#mis-subdes1 {
-    padding: 20px;
-}
-
-#courses {
-    height: 100%;
-    background-color: rgb(15, 32, 56);
-}
-
-.layout-card {
+/* Footer Styles */
+footer {
+    border-top: 2px solid black;
+    padding: 30px;
+    height: 70%;
+    width: 100%;
     display: flex;
-    height: 50%;
-    gap: 20px;
-    justify-content: stretch;
-    align-items: stretch;
-    padding: 10px;
-}
-
-.container-card {
-    display: flex;
+    gap: 5px;
     flex-direction: column;
-    flex: 1 1 0;
-    height: auto;
-    border: 3px solid white;
-    border-radius: 50px;
+    position: relative;
+    color: rgb(35, 35, 35);
+    background-color: white;
     align-items: center;
 }
 
-.container-card > img {
-    max-width: 50%;
-    align-self: center;      /* scale down if too wide */
-    height: auto;  
+footer img {
+    width: 300px;
+    padding-bottom: 20px;
 }
 
-#about-us, #mission-vis, #courses {
-  min-height: 100vh; /* each section fills at least one viewport height */
+.icon-w-description {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;  
+    padding: 1px;
 }
 
-
-/* Footer Styles */
-footer {
-    padding: 30px;
-    text-align: center;
-    height: 40%;
-    width: 100%;
-    position: relative;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+.icon-w-description img {
+    width: 20px;
+    height: 20px;
 }
 
 #copyright {
@@ -207,23 +150,33 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: var(--bg-color);
+    text-align: center;
 }
 
 .links {
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    gap: 50px;
+    width: 70%;
 }
 
-.links img {
-    width: 30%;
+.links a img {
+    width: 40px;
+    height: auto;
 }
 
-.links img {
+.icon-w-description p {
+    font-family: "OpenSansLight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    
+}
+
+.links a img {
   transition: filter 0.3s ease;
   color: var(--text-color);
-  background-color: white   ;
+  background-color: white;
 }
 
 .links img:hover {
