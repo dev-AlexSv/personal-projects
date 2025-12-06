@@ -6,7 +6,7 @@ function changeMode() {
 }
 
 function directHomePage() {
-    window.location.href = "main.html";
+    window.location.href = "index.html";
 }
 
 
