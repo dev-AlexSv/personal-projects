@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/program.css">
+    <script src="code.js" defer></script>
+    <title>Global Skills</title>
+    <style>
+        @font-face {
+            font-family: "OpenSans";
+            src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: "OpenSansLight";
+            src: url(fonts/Open_Sans/static/OpenSans-Light.ttf);
+        }
+
+        @font-face {
+            font-family: "OpenSansItalic";
+            src: url(fonts/Open_Sans/static/OpenSans-MediumItalic.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img id="main-logo" src="images/globalLogoNew.png" alt="Global Skills Logo">
+        <ul>
+            <a href="main.html">
+               <li class="dropdown">
+                    About Us
+                </li>
+            </a>
+            <a href="program.html">
+                <li>Programs</li>
+            </a>
+            <a href="registration.html" target="_blank">
+                <li>Enroll</li>
+            </a>
+        </ul>
+        <button id="mode-change" type="button">
+                <div id="toggle-circle"></div>
+        </button>
+    </header>
+    
+    <main>
+        <section class="programs-section">
+            <h1 class="section-title">Our Programs</h1>
+            <div class="content-programs">
+                
+                <div class="card-course">
+                    <div class="img-wrapper">
+                        <img src="images/javalogo.png" alt="Java Logo">
+                    </div>
+                    <div class="course-description">
+                        <h2>Java Programming</h2>
+                        <p>Learn the fundamentals of Java, object-oriented programming, and build real-world applications.</p>
+                        <button class="btn-view" onclick="window.location.href='courses/java.html'">View Course</button>
+                    </div>
+                </div>
+
+                <div class="card-course">
+                    <div class="img-wrapper">
+                        <img src="images/csslogo.jpg" alt="CSS Logo">
+                    </div>
+                    <div class="course-description">
+                        <h2>Computer Systems Servicing</h2>
+                        <p>Understand hardware, software installation, troubleshooting, and maintenance of computer systems.</p>
+                        <button class="btn-view" onclick="window.location.href='courses/css.html'">View Course</button>
+                    </div>
+                </div>  
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <img src="images/globalLogoNew.png" alt="">
+        <div class="icon-w-description">
+            <img src="images/location.png" alt="location">
+            <a href="https://www.google.com/maps/place/Ancar+Motors/@16.0216998,120.3493576,17z/data=!3m1!4b1!4m6!3m5!1s0x339142b64a510e21:0x89e2837b1d71397b!8m2!3d16.0216947!4d120.3519325!16s%2Fg%2F1tm0qpqr?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank"><p>2nd Flr., Ancar Motors Building, Jose De Venecia, Nalsian, Calasiao, Pangasinan 2418</p></a>
+        </div>
+        <div class="icon-w-description">
+            <img src="images/callsignage.png" alt="contact-number">
+            <p>(075) 202 1821</p>
+        </div>
+        <div class="links">
+            <a href="https://www.facebook.com/p/Global-Sk1lls-Training-Center-Inc-61567659489872/" target="_blank"><img src="images/fbicon.png" alt=""></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqVwxSmJLkCVNzMrgcnSVfzvpNpkNcPGxShFsqzDmgjxhVVfDHhCdgzRQbtWFFQfctbJxB" target="_blank"><img src="images/gmail.png" alt=""></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqVwxSmJLkCVNzMrgcnSVfzvpNpkNcPGxShFsqzDmgjxhVVfDHhCdgzRQbtWFFQfctbJxB" target="_blank"><img src="images/logo-black.png" alt=""></a>
+        </div>
+        <div id="copyright">2025 Global Skills Inc. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>

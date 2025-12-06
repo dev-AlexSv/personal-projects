@@ -109,14 +109,13 @@ main {
 
 /* TESTIMONIALS */
 #testimonials {
-    height: 60%;
+    height: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 30px;
     gap: 40px;
-    padding-bottom: 20%;
 }
 
 #testimonials .profile-card img {
@@ -124,6 +123,10 @@ main {
     border-radius: 50%;
     max-height: auto;   
 } 
+
+p.testimonies {
+    text-align: center;
+}
 
 h1#des-testi {
     font-size: 2rem;

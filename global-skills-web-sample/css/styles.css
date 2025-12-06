@@ -21,6 +21,10 @@ li {
     padding-right: 10px;
 }
 
+li:hover {
+    background-color: gray;
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -100,7 +104,7 @@ h2 {
 
 ul {
     display: flex;
-    margin-left: 300px;
+    margin-left: 700px;
     gap: 50px
 }
 
@@ -137,7 +141,7 @@ footer img {
 
 .icon-w-description img {
     width: 20px;
-    height: 20px;
+    height: auto;
 }
 
 #copyright {
@@ -170,7 +174,6 @@ footer img {
 .icon-w-description p {
     font-family: "OpenSansLight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
-    
 }
 
 .links a img {
